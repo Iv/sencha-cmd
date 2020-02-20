@@ -13,7 +13,7 @@ RUN curl --silent http://cdn.sencha.com/cmd/7.0.0.40/no-jre/SenchaCmd-7.0.0.40-l
     unzip /tmp/sencha.zip -d /tmp  && \
     unlink /tmp/sencha.zip  && \
     chmod o+x /tmp/SenchaCmd-7.0.0.40-linux-amd64.sh && \
-    /tmp/SenchaCmd-7.0.0.40-linux-amd64.sh -q -dir /opt/Sencha/Cmd/7.0.0.40 && \
+    /tmp/SenchaCmd-7.0.0.40-linux-amd64.sh -a -q -dir /opt/Sencha/Cmd/7.0.0.40 && \
     unlink /tmp/SenchaCmd-7.0.0.40-linux-amd64.sh
 
 WORKDIR /app
