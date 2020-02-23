@@ -4,8 +4,8 @@ FROM openjdk:8-jre-slim
 RUN apt-get update && apt-get install -y --no-install-recommends \
         curl \
         unzip \
-		libfreetype6 \
-		fontconfig \
+	libfreetype6 \
+	fontconfig \
         ruby \
         openssl \
 	&& rm -rf /var/lib/apt/lists/*
